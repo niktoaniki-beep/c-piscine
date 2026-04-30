@@ -1,0 +1,55 @@
+#include<unistd.h>
+
+void ft_print_exactly_twice(int *arr, int size)
+{
+    int i = 0; 
+    int j;
+    int seen;
+    int count;
+
+    while(i < size)
+    {
+        j = 0;
+        seen = 0;
+
+        while(j < i)
+        {
+            if(arr[i] == arr[j])
+            {
+                seen = 1;
+            }
+          j++; 
+        }
+
+        j = 0;
+        count = 0;
+
+          while(j < size)
+          {
+              if(arr[i] == arr[j])
+              {
+                count++;
+              }
+            j++;
+          }
+
+            if(seen == 0 && count == 2)
+            {
+                char nb = arr[i] + '0';
+                write(1, &nb, 1);
+                write(1," ",1);
+            }
+        i++;    
+    }
+    write(1,"\n",1);
+}
+
+
+int main(void)
+{
+    int arr[] = {1,2,4,4,3,2,5};
+
+     ft_print_exactly_twice(arr, 7);
+
+   return 0;  
+}
