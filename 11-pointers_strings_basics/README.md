@@ -1,6 +1,6 @@
-# 📁 11-pointers_strings_basics
+# 11-pointers_strings_basics
 
-## 🎯 Objective
+# Objective
 
 Today I worked on pointers applied to strings.
 
@@ -8,7 +8,7 @@ The goal was to understand how a string is stored in memory and how to manipulat
 
 ---
 
-## 🧠 What I learned
+# What I learned
 
 - A string is a sequence of characters ending with '\0'
 - char *str points to the first character of the string
@@ -20,7 +20,7 @@ The goal was to understand how a string is stored in memory and how to manipulat
 
 ---
 
-## 🔧 Functions implemented
+# Functions implemented
 
 - ft_putstr → print a string
 - ft_strlen → count the length of a string
@@ -33,7 +33,7 @@ The goal was to understand how a string is stored in memory and how to manipulat
 
 ---
 
-##  Difficulties
+# Difficulties
 
 - Understanding the difference between str and *str
 - Knowing when to stop at '\0'
@@ -42,7 +42,7 @@ The goal was to understand how a string is stored in memory and how to manipulat
 
 ---
 
-## 🚀 Conclusion
+# Conclusion
 
 I now have a solid understanding of pointers with strings.
 
